@@ -1,0 +1,11 @@
+curl -H "Content-Type: application/json" -X PUT -d '{"id": 1018, "name": "Jag" , "email": "jag@test.com"}'  http://localhost:4014/jdbc-user & curl -H "Content-Type: application/json" -X PUT -d '{"id": 1018, "name": "Jag" , "email": "jag@test.com"}'  http://localhost:4014/jdbc-user
+
+curl -X GET "http://localhost:4014/jdbc-user/1018" & curl -X GET "http://localhost:4014/jdbc-user/1018"
+
+
+curl -H "Content-Type: application/json" -X POST -d '{"name": "Mark" , "email": "jag@test.com"}'  http://localhost:4014/jdbc-user
+
+curl -X GET "http://localhost:4014/jdbc-user/10"
+
+
+curl -X GET "http://localhost:4014/jdbc-user/transaction/1018" & curl -X GET "http://localhost:4014/jdbc-user/transaction/1018"
